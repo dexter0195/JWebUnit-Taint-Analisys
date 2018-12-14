@@ -1,25 +1,64 @@
 package project.PageObjects;
 
-import org.junit.*;
-import net.sourceforge.jwebunit.junit.*;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 
-import org.junit.Test;
+public class LoginPage extends PageObject{
 
-public class LoginPage {
+    private String username;
+    private String password;
 
-    private String previousValue;
+    @FindBy(xpath = "//input[@name='username']")
+    private WebElement usernameField;
 
-    public void login(WebTester tester,String username, String password){
+    @FindBy(xpath = "//input[@name='password']")
+    private WebElement passwordField;
 
-                tester.setBaseUrl("http://192.168.56.103/schoolmate/");
-                tester.beginAt("/index.php");
-                tester.setTextField("username", username);
-                tester.setTextField("password", password);
-                tester.submit();
+    @FindBy(xpath = "//input[@value='Login']")
+    private WebElement loginButton;
+
+    public LoginPage(WebDriver driver) {
+        super(driver);
     }
-    
-    public void logout (WebTester tester){
 
-                tester.clickLinkWithExactText("Log Out");
+    public String getPageTitle (){
+        return driver.getTitle();
     }
+
+    private void goToLoginPage(){
+        // Storing the Application Url in the String variable
+        String url = "http://192.168.56.103/schoolmate/index.php";
+        //Launch the ToolsQA WebSite
+        driver.get(url);
+    }
+
+
+    private void fillUsername(){
+        usernameField.clear();
+        usernameField.sendKeys(username);
+    }
+
+    private void fillPassword(){
+        passwordField.clear();
+        passwordField.sendKeys(username);
+    }
+
+    private void clickLoginButton() {
+        this.loginButton.click();
+    }
+
+    public void login(String username, String password){
+
+        goToLoginPage();
+
+        this.username = username;
+        this.password = password;
+
+        fillUsername();
+        fillPassword();
+
+        clickLoginButton();
+    }
+
 }
