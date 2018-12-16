@@ -10,41 +10,41 @@ public class LoggedInPage extends PageObject{
     @FindBy(xpath = "//form[@name='admin']//input[@name='page2']")
     protected WebElement page2Field;
 
-    @FindBy(xpath = "//a[contains(text(),'School')]")
-    protected WebElement schoolButton;
+    @FindBy(xpath = "//a[@class='menu'][contains(text(),'School')]")
+    private WebElement schoolButton;
 
     @FindBy(xpath = "//a[contains(text(),'Terms')]")
-    protected WebElement termsButton;
+    private WebElement termsButton;
 
     @FindBy(xpath = "//a[contains(text(),'Semesters')]")
-    protected WebElement semestersButton;
+    private WebElement semestersButton;
 
     @FindBy(xpath = "//a[contains(text(),'Classes')]")
-    protected WebElement classesButton;
+    private WebElement classesButton;
 
     @FindBy(xpath = "//a[contains(text(),'Users')]")
-    protected WebElement usersButton;
+    private WebElement usersButton;
 
     @FindBy(xpath = "//a[contains(text(),'Teachers')]")
-    protected WebElement teachersButton;
+    private WebElement teachersButton;
 
     @FindBy(xpath = "//a[contains(text(),'Students')]")
-    protected WebElement studentsButton;
+    private WebElement studentsButton;
 
     @FindBy(xpath = "//a[contains(text(),'Registration')]")
-    protected WebElement registrationButton;
+    private WebElement registrationButton;
 
     @FindBy(xpath = "//a[contains(text(),'Attendance')]")
-    protected WebElement attendanceButton;
+    private WebElement attendanceButton;
 
     @FindBy(xpath = "//a[contains(text(),'Parents')]")
-    protected WebElement parentsButton;
+    private WebElement parentsButton;
 
     @FindBy(xpath = "//a[contains(text(),'Announcements')]")
-    protected WebElement announcementsButton;
+    private WebElement announcementsButton;
 
     @FindBy(xpath = "//a[contains(text(),'Log Out')]")
-    protected WebElement logoutButton;
+    private WebElement logoutButton;
 
     private JavascriptExecutor js = (JavascriptExecutor) driver;
 
@@ -54,39 +54,51 @@ public class LoggedInPage extends PageObject{
 
     public void clickSchoolButton(){
         schoolButton.click();
+        utils.SimpleSleep(1);
     }
     public void clickTermsButton(){
         termsButton.click();
+        utils.SimpleSleep(1);
     }
     public void clickSemestersButton(){
         semestersButton.click();
+        utils.SimpleSleep(1);
     }
     public void clickClassesButton(){
         classesButton.click();
+        utils.SimpleSleep(1);
     }
     public void clickUsersButton(){
         usersButton.click();
+        utils.SimpleSleep(1);
     }
     public void clickTeachersButton(){
         teachersButton.click();
+        utils.SimpleSleep(1);
     }
     public void clickStudentsButton(){
         studentsButton.click();
+        utils.SimpleSleep(1);
     }
     public void clickRegistrationButton(){
         registrationButton.click();
+        utils.SimpleSleep(1);
     }
     public void clickAttendanceButton(){
         attendanceButton.click();
+        utils.SimpleSleep(1);
     }
     public void clickParentsButton(){
         parentsButton.click();
+        utils.SimpleSleep(1);
     }
     public void clickAnnouncementsButton(){
         announcementsButton.click();
+        utils.SimpleSleep(1);
     }
     public void logout (){
         logoutButton.click();
+        utils.SimpleSleep(1);
     }
 
     public String getPageHeading(){
@@ -95,21 +107,27 @@ public class LoggedInPage extends PageObject{
         return title;
     }
 
-    public boolean isMaliciousLinkPresent(){
-        return driver.findElements(By.linkText("Malicious Link")).size() > 0;
+    public boolean isLinkPresentWithText(String text){
+        return driver.findElements(By.linkText(text)).size() > 0;
     }
 
     public String getPage2Value(){
-        return page2Field.getText();
+        page2Field = getPage2Field();
+        return this.page2Field.getAttribute("value");
     }
 
-    public void submitAdminForm(){
-        js.executeScript("window.admin.submit()");
+    public void submitForm(String name){
+        js.executeScript("document."+name+".submit()");
+        utils.SimpleSleep(1);
     }
 
     public void setPage2Field(String s){
+        page2Field = getPage2Field();
         String injection = "arguments[0].setAttribute(\"value\",\""+s+")";
         js.executeScript(injection, page2Field);
     }
 
+    public WebElement getPage2Field() {
+        return page2Field;
+    }
 }

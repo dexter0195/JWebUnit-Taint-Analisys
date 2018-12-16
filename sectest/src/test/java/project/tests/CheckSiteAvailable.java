@@ -6,7 +6,6 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import project.PageObjects.AdminMainPage;
-import project.utils.BaseTest;
 
 import static org.junit.Assert.assertEquals;
 

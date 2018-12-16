@@ -59,6 +59,8 @@ public class LoginPage extends PageObject{
         fillPassword();
 
         clickLoginButton();
+
+        utils.SimpleSleep(1);
     }
 
 }
