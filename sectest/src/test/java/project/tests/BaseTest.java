@@ -13,7 +13,8 @@ import static org.junit.Assert.fail;
 public class BaseTest {
 
     protected WebDriver driver;
-    protected static String baseUrl = "http://192.168.56.103/schoolmate/index.php";
+    private static String baseUrl = "http://192.168.56.103/schoolmate/index.php";
+//    private static String baseUrl = "http://192.168.56.103/schoolmate-patched/index.php";
     private StringBuffer verificationErrors = new StringBuffer();
 
     protected static myUtils utils;
@@ -47,7 +48,7 @@ public class BaseTest {
         System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE,"/dev/null");
 
         FirefoxOptions options = new FirefoxOptions();
-        options.setHeadless(false);
+        options.setHeadless(true);
 
         driver = new FirefoxDriver(options);
 
