@@ -21,14 +21,6 @@ public class myUtils {
         }
     }
 
-    public void login(String user, String pass){
-        driver.findElement(By.name("username")).clear();
-        driver.findElement(By.name("username")).sendKeys(user);
-        driver.findElement(By.name("password")).clear();
-        driver.findElement(By.name("password")).sendKeys(pass);
-        driver.findElement(By.xpath("//input[@value='Login']")).click();
-    }
-
     public void inject(WebElement variable, String injection){
 
         JavascriptExecutor js = (JavascriptExecutor) driver;

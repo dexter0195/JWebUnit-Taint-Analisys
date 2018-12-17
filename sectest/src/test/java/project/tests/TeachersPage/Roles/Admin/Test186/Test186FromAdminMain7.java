@@ -1,18 +1,27 @@
-package project.tests.Test186;
+package project.tests.TeachersPage.Roles.Admin.Test186;
 
 import org.junit.*;
 import static org.junit.Assert.*;
 import org.openqa.selenium.*;
 import project.tests.BaseTest;
+import project.tests.TeachersPage.Roles.Admin.TeacherAdminBaseTest;
 
-public class Test186FromAdminMain7 extends BaseTest {
-
+public class Test186FromAdminMain7 extends TeacherAdminBaseTest {
 
     @Test
-    public void test186FromAdminMain7() throws Exception {
-        driver.get(baseUrl);
+    public void test186FromAdminMain7() {
 
-        utils.login("schoolmate","schoolmate" );
+        //navigation
+        goToLoginPage();
+        assertTrue(isLoginPage());
+
+        login(username, password);
+        assertTrue(isLoggedIn());
+
+        clickTeacherButton();
+        assertTrue(isTeacherPage());
+
+        //ATTACK
 
         WebElement page2 = driver.findElement(
                 By.xpath("//form[@name='admin']//input[@name='page2']"));
