@@ -22,4 +22,22 @@ for each file
 		generate the test code 
 		
 
+#create form
 
+var f = document.createElement("form");
+f.setAttribute('method',"post");
+f.setAttribute('name',"myform");
+
+var i = document.createElement("input"); //input element, text
+i.setAttribute('type',"hidden");
+i.setAttribute('name',"page");
+i.setAttribute('value',"1");
+f.appendChild(i);
+
+var i = document.createElement("input"); //input element, text
+i.setAttribute('type',"hidden");
+i.setAttribute('name',"page2");
+i.setAttribute('value',"1");
+f.appendChild(i);
+
+document.getElementsByTagName('body')[0].appendChild(f);

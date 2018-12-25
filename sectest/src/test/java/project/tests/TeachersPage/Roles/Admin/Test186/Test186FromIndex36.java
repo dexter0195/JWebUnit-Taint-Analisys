@@ -9,7 +9,7 @@ public class Test186FromIndex36 extends TeacherAdminBaseTest {
 
 
     @Test
-    public void test186FromIndex36() {
+    public void test() {
 
         String taintedVar = "page";
         String formName = "admin";
