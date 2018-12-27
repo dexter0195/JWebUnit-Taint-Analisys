@@ -11,6 +11,8 @@ public class ParentBaseTest extends BaseTest {
     protected static String MainTitle = "Students of parent parent";
     protected static String classesTitle = "studente 1 uno's Classes";
     protected static String classSettingsTitle = "Class Settings";
+    protected static String ViewAssignmentTitle = "View Assignments";
+    protected static String ViewGradesTitle = "View Grades";
 
 
     protected String getUsername(){

@@ -2,10 +2,11 @@
 package project.tests.Parent.Test87;
 
 import org.junit.*;
+import project.tests.Parent.ParentBaseTest;
+
 import static org.junit.Assert.*;
-import project.tests.Student.StudentBaseTest;
-        
-public class Test87Fromindex36 extends StudentBaseTest { 
+
+public class Test87Fromindex36 extends ParentBaseTest {
 
 
     @Test

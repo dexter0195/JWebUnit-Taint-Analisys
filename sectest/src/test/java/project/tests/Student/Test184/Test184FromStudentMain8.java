@@ -24,14 +24,14 @@ public class Test184FromStudentMain8 extends StudentBaseTest {
         utils.createMyForm();
         utils.addFieldToMyFormWithValue("page","4");
         utils.addFieldToMyFormWithValue("page2","2");
-        //utils.addFieldToMyFormWithValue("selectclass","1");
+        utils.addFieldToMyFormWithValue("selectclass","7");
         //utils.addFieldToMyFormWithValue("onpage","1");
         
         //ATTACK
         utils.injectVarMyForm(taintedVar);
-        
-        assertTrue("ERROR: Title doesn't match",utils.isTitleEqualsTo(MainTitle));
-        
+
+        assertTrue("ERROR: Title doesn't match",utils.isTitleEqualsTo(ViewAssignmentTitle));
+
         //found possible title for page: View Assignments
         
         

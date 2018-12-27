@@ -24,22 +24,14 @@ public class Test201FromViewGrades102 extends StudentBaseTest {
         utils.createMyForm();
         utils.addFieldToMyFormWithValue("page","4");
         utils.addFieldToMyFormWithValue("page2","3");
-        //utils.addFieldToMyFormWithValue("student","1");
+        utils.addFieldToMyFormWithValue("student","3");
         utils.addFieldToMyFormWithValue("selectclass","7");
-            
-        //ATTACK
-        utils.injectVarMyForm(taintedVar);
-        
-        assertTrue("ERROR: Title doesn't match",utils.isTitleEqualsTo(MainTitle));
-        
-        //found possible title for page: View Grades
-        
-        
-        assertFalse("ERROR: Malicious link found",utils.isMaliciousLinkPresentInForm(targetForm));
-        
-// TODO: check added field: student
 
-// TODO: check added field: selectclass
+        //ATTACK
+        utils.injectVarMyFormForSQL(taintedVar);
+
+        assertTrue("ERROR: Title doesn't match",utils.isTitleEqualsTo(ViewGradesTitle));
+        assertFalse("ERROR: Malicious link found",utils.isMaliciousLinkPresentInForm(targetForm));
 
     }
 }

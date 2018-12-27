@@ -1,18 +1,19 @@
 
-package project.tests.Student.Test200;
+package project.tests.Parent.Test183;
 
 import org.junit.*;
 import static org.junit.Assert.*;
-import project.tests.Student.StudentBaseTest;
-        
-public class Test200FromViewGrades102 extends StudentBaseTest { 
+
+import project.tests.Parent.ParentBaseTest;
+
+public class Test183Fromindex36 extends ParentBaseTest {
 
 
     @Test
     public void test() {
 
-        String taintedVar = "selectclass";
-        String targetForm = "grades";
+        String taintedVar = "page";
+        String targetForm = "assignments";
 
         //login
         goToLoginPage();
@@ -22,25 +23,17 @@ public class Test200FromViewGrades102 extends StudentBaseTest {
         
         //create the custom form with navigation to target page
         utils.createMyForm();
-        utils.addFieldToMyFormWithValue("page","4");
-        utils.addFieldToMyFormWithValue("page2","3");
-        //utils.addFieldToMyFormWithValue("student","1");
+        utils.addFieldToMyFormWithValue("page","5");
+        utils.addFieldToMyFormWithValue("page2","2");
         utils.addFieldToMyFormWithValue("selectclass","7");
-            
+
         //ATTACK
         utils.injectVarMyForm(taintedVar);
         
-        assertTrue("ERROR: Title doesn't match",utils.isTitleEqualsTo(MainTitle));
-        
-        //found possible title for page: View Grades
-        
+        assertTrue("ERROR: Title doesn't match",utils.isTitleEqualsTo(ViewAssignmentTitle));
         
         assertFalse("ERROR: Malicious link found",utils.isMaliciousLinkPresentInForm(targetForm));
         
-// TODO: check added field: student
-
-// TODO: check added field: selectclass
-
     }
 }
         

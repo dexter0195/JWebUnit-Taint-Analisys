@@ -13,13 +13,13 @@ public class myUtils {
         this.driver = driver;
     }
 
-    private void submitForm(String name){
+    public void submitForm(String name){
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("document."+name+".submit()");
         SimpleSleep(1);
     }
 
-    private WebElement getVarElement(String formName, String taintedVar){
+    public WebElement getVarElement(String formName, String taintedVar){
         return driver.findElement(By.xpath("//form[@name='"+formName+"']//input[@name='"+taintedVar+"']"));
     }
 

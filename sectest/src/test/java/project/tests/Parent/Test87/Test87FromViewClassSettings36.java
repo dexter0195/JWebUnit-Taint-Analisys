@@ -3,9 +3,10 @@ package project.tests.Parent.Test87;
 
 import org.junit.*;
 import static org.junit.Assert.*;
-import project.tests.Student.StudentBaseTest;
-        
-public class Test87FromViewClassSettings36 extends StudentBaseTest { 
+
+import project.tests.Parent.ParentBaseTest;
+
+public class Test87FromViewClassSettings36 extends ParentBaseTest {
 
 
     @Test
