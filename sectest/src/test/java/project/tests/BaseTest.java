@@ -19,6 +19,7 @@ public class BaseTest {
 
     protected static myUtils utils;
 
+
     protected void goToLoginPage(){
         driver.get(baseUrl);
         utils.SimpleSleep(1);
@@ -48,7 +49,7 @@ public class BaseTest {
         System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE,"/dev/null");
 
         FirefoxOptions options = new FirefoxOptions();
-        options.setHeadless(true);
+        options.setHeadless(false);
 
         driver = new FirefoxDriver(options);
 
