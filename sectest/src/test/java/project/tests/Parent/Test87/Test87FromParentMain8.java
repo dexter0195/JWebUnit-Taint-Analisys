@@ -1,5 +1,5 @@
 
-package project.tests.Student.Test87;
+package project.tests.Parent.Test87;
 
 import org.junit.*;
 import static org.junit.Assert.*;
@@ -22,25 +22,17 @@ public class Test87FromParentMain8 extends StudentBaseTest {
         
         //create the custom form with navigation to target page
         utils.createMyForm();
-        utils.addFieldToMyFormWithValue("page","4");
+        utils.addFieldToMyFormWithValue("page","5");
         utils.addFieldToMyFormWithValue("page2","1");
-        //utils.addFieldToMyFormWithValue("update","1");
-        //utils.addFieldToMyFormWithValue("selectclass","1");
-        
+        utils.addFieldToMyFormWithValue("selectclass","7");
+
         //ATTACK
         utils.injectVarMyForm(taintedVar);
-        
-        assertTrue("ERROR: Title doesn't match",utils.isTitleEqualsTo(MainTitle));
-        
-        //found possible title for page: Class Settings
-        
-        
+
+        assertTrue("ERROR: Title doesn't match",utils.isTitleEqualsTo(classSettingsTitle));
+
         assertFalse("ERROR: Malicious link found",utils.isMaliciousLinkPresentInForm(targetForm));
         
-// TODO: check added field: update
-
-// TODO: check added field: selectclass
-
     }
 }
         

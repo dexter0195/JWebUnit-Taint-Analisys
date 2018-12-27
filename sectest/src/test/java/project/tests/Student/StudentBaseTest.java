@@ -9,6 +9,9 @@ public class StudentBaseTest extends BaseTest {
     private static String password = "student";
 
     protected static String MainTitle = "";
+    protected static String classSettingsTitle = "Class Settings";
+    protected static String classMainTitle = "studente 1 uno's Classes";
+    protected static String ViewAssignmentTitle = "View Assignments";
 
     protected String getUsername(){
         return username;

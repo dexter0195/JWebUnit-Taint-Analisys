@@ -28,15 +28,16 @@ public class Test138FromStudentMain8 extends StudentBaseTest {
         
         //ATTACK
         utils.injectVarMyForm(taintedVar);
-        
-        assertTrue("ERROR: Title doesn't match",utils.isTitleEqualsTo(MainTitle));
-        
+
+        assertTrue("ERROR: Title doesn't match",utils.isTitleEqualsTo(classMainTitle));
+
         //found possible title for page: $studentid[1] $studentid[2]'s Classes
-        
-        
-        assertFalse("ERROR: Malicious link found",utils.isMaliciousLinkPresentInForm(targetForm));
-        
-// TODO: check added field: semester
+
+
+        assertFalse("ERROR: Malicious link found",utils.isMaliciousLinkPresentInPath("//td[@class='w']//td"));
+
+        //TODO: spiegare perche` non e` possibile controllare la presenza del link nel form, ovvero perche` l'html del sito
+        // e` malformato
 
     }
 }

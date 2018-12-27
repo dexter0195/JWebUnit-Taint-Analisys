@@ -36,10 +36,6 @@ public class Test88Fromindex36 extends StudentBaseTest {
         
         
         assertFalse("ERROR: Malicious link found",utils.isMaliciousLinkPresentInForm(targetForm));
-        
-// TODO: check added field: update
-
-// TODO: check added field: selectclass
 
     }
 }

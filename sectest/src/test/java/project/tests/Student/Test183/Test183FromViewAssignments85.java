@@ -25,22 +25,14 @@ public class Test183FromViewAssignments85 extends StudentBaseTest {
         utils.addFieldToMyFormWithValue("page","4");
         utils.addFieldToMyFormWithValue("page2","2");
         utils.addFieldToMyFormWithValue("selectclass","7");
-            //utils.addFieldToMyFormWithValue("onpage","1");
-        
+
         //ATTACK
-        utils.injectVarMyForm(taintedVar);
-        
-        assertTrue("ERROR: Title doesn't match",utils.isTitleEqualsTo(MainTitle));
-        
-        //found possible title for page: View Assignments
-        
-        
+        utils.injectVarMyFormForSQL(taintedVar);
+
+        assertTrue("ERROR: Title doesn't match",utils.isTitleEqualsTo(ViewAssignmentTitle));
+
         assertFalse("ERROR: Malicious link found",utils.isMaliciousLinkPresentInForm(targetForm));
         
-// TODO: check added field: selectclass
-
-// TODO: check added field: onpage
-
     }
 }
         
