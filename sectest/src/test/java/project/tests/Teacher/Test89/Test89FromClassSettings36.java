@@ -25,22 +25,15 @@ public class Test89FromClassSettings36 extends TeacherBaseTest {
         utils.addFieldToMyFormWithValue("page","2");
         utils.addFieldToMyFormWithValue("page2","1");
         //utils.addFieldToMyFormWithValue("update","1");
-        utils.addFieldToMyFormWithValue("selectclass","7");
+        utils.addFieldToMyFormWithValue("selectclass","8");
             
         //ATTACK
-        utils.injectVarMyForm(taintedVar);
+        utils.injectVarMyFormForSQL(taintedVar);
         
-        assertTrue("ERROR: Title doesn't match",utils.isTitleEqualsTo(MainTitle));
-        
-        //found possible title for page: Class Settings
-        
+        assertTrue("ERROR: Title doesn't match",utils.isTitleEqualsTo(classSettingsTitle));
         
         assertFalse("ERROR: Malicious link found",utils.isMaliciousLinkPresentInForm(targetForm));
         
-// TODO: check added field: update
-
-// TODO: check added field: selectclass
-
     }
 }
         

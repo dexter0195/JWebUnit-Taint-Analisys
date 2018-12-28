@@ -27,14 +27,11 @@ public class Test180FromTeacherMain83 extends TeacherBaseTest {
         utils.addFieldToMyFormWithValue("selectclass","7");
             
         //ATTACK
-        utils.injectVarMyForm(taintedVar);
+        utils.injectVarMyFormForSQL(taintedVar);
         
         assertTrue("ERROR: Title doesn't match",utils.isTitleEqualsTo(MainTitle));
         
         assertFalse("ERROR: Malicious link found",utils.isMaliciousLinkPresentInForm(targetForm));
-        
-// TODO: check added field: selectclass
-// TODO: check field missing:pageTitle
         
     }
 }

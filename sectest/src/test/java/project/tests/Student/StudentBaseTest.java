@@ -13,6 +13,7 @@ public class StudentBaseTest extends BaseTest {
     protected static String classMainTitle = "studente 1 uno's Classes";
     protected static String ViewAssignmentTitle = "View Assignments";
     protected static String ViewGradesTitle = "View Grades";
+    protected static String viewAnnouncementsTitle = "View Announcements";
 
     protected String getUsername(){
         return username;

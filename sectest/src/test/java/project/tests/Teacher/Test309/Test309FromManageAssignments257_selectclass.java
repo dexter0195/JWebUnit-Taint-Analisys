@@ -1,14 +1,15 @@
 
-package project.tests.Teacher.Test316;
+package project.tests.Teacher.Test309;
 
-import org.junit.*;
-import static org.junit.Assert.*;
-
+import org.junit.Test;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import project.tests.Teacher.TeacherBaseTest;
-        
-public class Test316FromManageGrades270 extends TeacherBaseTest {
+
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
+
+public class Test309FromManageAssignments257_selectclass extends TeacherBaseTest {
 
     public void injectVarMyFormForSQL(String variable) {
 
@@ -29,7 +30,7 @@ public class Test316FromManageGrades270 extends TeacherBaseTest {
     public void test() {
 
         String taintedVar = "selectclass";
-        String targetForm = "grades";
+        String targetForm = "assignments";
 
         //login
         goToLoginPage();
@@ -40,17 +41,18 @@ public class Test316FromManageGrades270 extends TeacherBaseTest {
         //create the custom form with navigation to target page
         utils.createMyForm();
         utils.addFieldToMyFormWithValue("page","2");
-        utils.addFieldToMyFormWithValue("page2","3");
-        utils.addFieldToMyFormWithValue("selectclass","8");
+        utils.addFieldToMyFormWithValue("page2","2");
+        utils.addFieldToMyFormWithValue("selectclass","7");
+        utils.addFieldToMyFormWithValue("onpage","1");
 
         //ATTACK
         injectVarMyFormForSQL(taintedVar);
 
-        assertTrue("ERROR: Title doesn't match",utils.isTitleEqualsTo(gradesTitle));
+        assertTrue("ERROR: Title doesn't match",utils.isTitleEqualsTo(manageAssignmentTitle));
 
         assertFalse("ERROR: Malicious link found",utils.isMaliciousLinkPresentInForm(targetForm));
 
-        // TODO: inconsistenza nelle query successive, rompe la pagina
+        //TODO : spiegare che = pagina rotta per incongruenza nelle query sql, una con il single quote e una senza
 
     }
 }

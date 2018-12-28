@@ -24,26 +24,18 @@ public class Test76FromEditGrade2 extends TeacherBaseTest {
         utils.createMyForm();
         utils.addFieldToMyFormWithValue("page","2");
         utils.addFieldToMyFormWithValue("page2","7");
-        //utils.addFieldToMyFormWithValue("delete","1");
-            //utils.addFieldToMyFormWithValue("assignment","1");
-        //utils.addFieldToMyFormWithValue("selectclass","1");
-        
+        utils.addFieldToMyFormWithValue("delete","1");
+        utils.addFieldToMyFormWithValue("assignment","2");
+        utils.addFieldToMyFormWithValue("selectclass","8");
+
         //ATTACK
         utils.injectVarMyForm(taintedVar);
-        
-        assertTrue("ERROR: Title doesn't match",utils.isTitleEqualsTo(MainTitle));
-        
-        //found possible title for page: Edit Grade
-        
-        
-        assertFalse("ERROR: Malicious link found",utils.isMaliciousLinkPresentInForm(targetForm));
-        
-// TODO: check added field: delete
-// TODO: there is a delete, check it and do the restore
-                
-// TODO: check added field: assignment
 
-// TODO: check added field: selectclass
+        assertTrue("ERROR: Title doesn't match",utils.isTitleEqualsTo(editGradeTitle));
+
+        assertFalse("ERROR: Malicious link found",utils.isMaliciousLinkPresentInForm(targetForm));
+
+        // TODO: falso positivo perche` di delete si usa solo un carattere
 
     }
 }

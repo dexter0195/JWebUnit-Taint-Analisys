@@ -13,6 +13,7 @@ public class ParentBaseTest extends BaseTest {
     protected static String classSettingsTitle = "Class Settings";
     protected static String ViewAssignmentTitle = "View Assignments";
     protected static String ViewGradesTitle = "View Grades";
+    protected static String viewAnnouncementsTitle = "View Announcements";
 
 
     protected String getUsername(){

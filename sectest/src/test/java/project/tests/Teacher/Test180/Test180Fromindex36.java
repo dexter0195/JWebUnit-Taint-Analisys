@@ -24,7 +24,7 @@ public class Test180Fromindex36 extends TeacherBaseTest {
         utils.createMyForm();
         utils.addFieldToMyFormWithValue("page","2");
         utils.addFieldToMyFormWithValue("page2","0");
-        //utils.addFieldToMyFormWithValue("selectclass","1");
+        utils.addFieldToMyFormWithValue("selectclass","7");
         
         //ATTACK
         utils.injectVarMyForm(taintedVar);
@@ -32,9 +32,6 @@ public class Test180Fromindex36 extends TeacherBaseTest {
         assertTrue("ERROR: Title doesn't match",utils.isTitleEqualsTo(MainTitle));
         
         assertFalse("ERROR: Malicious link found",utils.isMaliciousLinkPresentInForm(targetForm));
-        
-// TODO: check added field: selectclass
-// TODO: check field missing:pageTitle
         
     }
 }

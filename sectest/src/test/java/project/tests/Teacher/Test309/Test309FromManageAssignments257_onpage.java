@@ -1,18 +1,18 @@
 
-package project.tests.Teacher.Test147;
+package project.tests.Teacher.Test309;
 
 import org.junit.*;
 import static org.junit.Assert.*;
 import project.tests.Teacher.TeacherBaseTest;
         
-public class Test147FromStudentMain8 extends TeacherBaseTest { 
+public class Test309FromManageAssignments257_onpage extends TeacherBaseTest {
 
 
     @Test
     public void test() {
 
-        String taintedVar = "page2";
-        String targetForm = "announcements";
+        String taintedVar = "onpage";
+        String targetForm = "assignments";
 
         //login
         goToLoginPage();
@@ -23,21 +23,16 @@ public class Test147FromStudentMain8 extends TeacherBaseTest {
         //create the custom form with navigation to target page
         utils.createMyForm();
         utils.addFieldToMyFormWithValue("page","2");
-        utils.addFieldToMyFormWithValue("page2","9");
-        //utils.addFieldToMyFormWithValue("onpage","1");
+        utils.addFieldToMyFormWithValue("page2","2");
+        utils.addFieldToMyFormWithValue("selectclass","7");
+        utils.addFieldToMyFormWithValue("onpage","1");
         
         //ATTACK
         utils.injectVarMyForm(taintedVar);
         
-        assertTrue("ERROR: Title doesn't match",utils.isTitleEqualsTo(MainTitle));
-        
-        //found possible title for page: View Announcements
-        
+        assertTrue("ERROR: Title doesn't match",utils.isTitleEqualsTo(manageAssignmentTitle));
         
         assertFalse("ERROR: Malicious link found",utils.isMaliciousLinkPresentInForm(targetForm));
-        
-// TODO: check added field: onpage
 
     }
 }
-        

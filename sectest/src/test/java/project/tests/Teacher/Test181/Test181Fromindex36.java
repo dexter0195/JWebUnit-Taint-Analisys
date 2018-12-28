@@ -24,20 +24,15 @@ public class Test181Fromindex36 extends TeacherBaseTest {
         utils.createMyForm();
         utils.addFieldToMyFormWithValue("page","2");
         utils.addFieldToMyFormWithValue("page2","8");
-        //utils.addFieldToMyFormWithValue("selectclass","1");
-        
+        utils.addFieldToMyFormWithValue("selectclass","7");
+
         //ATTACK
         utils.injectVarMyForm(taintedVar);
         
-        assertTrue("ERROR: Title doesn't match",utils.isTitleEqualsTo(MainTitle));
-        
-        //found possible title for page: Students
-        
+        assertTrue("ERROR: Title doesn't match",utils.isTitleEqualsTo(studentsTitle));
         
         assertFalse("ERROR: Malicious link found",utils.isMaliciousLinkPresentInForm(targetForm));
         
-// TODO: check added field: selectclass
-
     }
 }
         
