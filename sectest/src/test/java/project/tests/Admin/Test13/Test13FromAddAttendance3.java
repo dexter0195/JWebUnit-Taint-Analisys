@@ -24,23 +24,15 @@ public class Test13FromAddAttendance3 extends AdminBaseTest {
         utils.createMyForm();
         utils.addFieldToMyFormWithValue("page","1");
         utils.addFieldToMyFormWithValue("page2","31");
-        //utils.addFieldToMyFormWithValue("semester","1");
         utils.addFieldToMyFormWithValue("student","3");
             
         //ATTACK
-        utils.injectVarMyForm(taintedVar);
+        utils.injectVarMyFormForSQL(taintedVar);
         
-        assertTrue("ERROR: Title doesn't match",utils.isTitleEqualsTo(MainTitle));
-        
-        //found possible title for page: Add New Attendance Record
-        
+        assertTrue("ERROR: Title doesn't match",utils.isTitleEqualsTo(addAttendanceTitle));
         
         assertFalse("ERROR: Malicious link found",utils.isMaliciousLinkPresentInForm(targetForm));
         
-// TODO: check added field: semester
-
-// TODO: check added field: student
-
     }
 }
         

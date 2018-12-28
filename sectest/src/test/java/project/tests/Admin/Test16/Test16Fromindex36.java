@@ -28,10 +28,7 @@ public class Test16Fromindex36 extends AdminBaseTest {
         //ATTACK
         utils.injectVarMyForm(taintedVar);
         
-        assertTrue("ERROR: Title doesn't match",utils.isTitleEqualsTo(MainTitle));
-        
-        //found possible title for page: Add New Announcement
-        
+        assertTrue("ERROR: Title doesn't match",utils.isTitleEqualsTo(addAnnouncementTitle));
         
         assertFalse("ERROR: Malicious link found",utils.isMaliciousLinkPresentInForm(targetForm));
         
