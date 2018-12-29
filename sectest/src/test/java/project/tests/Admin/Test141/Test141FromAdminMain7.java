@@ -24,20 +24,14 @@ public class Test141FromAdminMain7 extends AdminBaseTest {
         utils.createMyForm();
         utils.addFieldToMyFormWithValue("page","1");
         utils.addFieldToMyFormWithValue("page2","9");
-        //utils.addFieldToMyFormWithValue("fullyear","1");
-        
+
         //ATTACK
         utils.injectVarMyForm(taintedVar);
         
-        assertTrue("ERROR: Title doesn't match",utils.isTitleEqualsTo(MainTitle));
-        
-        //found possible title for page: Add New Class
-        
+        assertTrue("ERROR: Title doesn't match",utils.isTitleEqualsTo(addClassTitle));
         
         assertFalse("ERROR: Malicious link found",utils.isMaliciousLinkPresentInForm(targetForm));
         
-// TODO: check added field: fullyear
-
     }
 }
         

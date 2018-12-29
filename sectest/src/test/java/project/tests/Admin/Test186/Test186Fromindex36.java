@@ -32,6 +32,8 @@ public class Test186Fromindex36 extends AdminBaseTest {
         
         assertFalse("ERROR: Malicious link found",utils.isMaliciousLinkPresentInForm(targetForm));
         // TODO: check field missing:pageTitle
+
+        //TODO: segnalibro
         
     }
 }

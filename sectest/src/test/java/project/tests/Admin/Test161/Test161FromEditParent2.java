@@ -19,29 +19,22 @@ public class Test161FromEditParent2 extends AdminBaseTest {
         assertTrue("ERROR: cannot go to log in page", isLoginPage());
         login(getUsername(),getPassword());
         assertTrue("ERROR: cannot login", isLoggedIn());
-        
+
         //create the custom form with navigation to target page
         utils.createMyForm();
         utils.addFieldToMyFormWithValue("page","1");
         utils.addFieldToMyFormWithValue("page2","24");
-        //utils.addFieldToMyFormWithValue("delete","1");
-            //utils.addFieldToMyFormWithValue("studentid","1");
-        
+        utils.addFieldToMyFormWithValue("delete","2");
+        utils.addFieldToMyFormWithValue("studentid","3");
+
         //ATTACK
         utils.injectVarMyForm(taintedVar);
-        
-        assertTrue("ERROR: Title doesn't match",utils.isTitleEqualsTo(MainTitle));
-        
-        //found possible title for page: Edit Parent
-        
-        
-        assertFalse("ERROR: Malicious link found",utils.isMaliciousLinkPresentInForm(targetForm));
-        
-// TODO: check added field: delete
-// TODO: there is a delete, check it and do the restore
-                
-// TODO: check added field: studentid
 
+        assertTrue("ERROR: Title doesn't match",utils.isTitleEqualsTo(editParentTitle));
+
+        assertFalse("ERROR: Malicious link found",utils.isMaliciousLinkPresentInForm(targetForm));
+        // TODO: FP delete
+        
     }
 }
         
