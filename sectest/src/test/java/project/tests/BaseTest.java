@@ -49,7 +49,7 @@ public class BaseTest {
         System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE,"/dev/null");
 
         FirefoxOptions options = new FirefoxOptions();
-        options.setHeadless(false);
+        options.setHeadless(true);
 
         driver = new FirefoxDriver(options);
 
