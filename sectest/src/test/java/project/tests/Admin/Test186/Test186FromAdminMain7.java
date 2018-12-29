@@ -31,8 +31,6 @@ public class Test186FromAdminMain7 extends AdminBaseTest {
         assertTrue("ERROR: Title doesn't match",utils.isTitleEqualsTo(MainTitle));
         
         assertFalse("ERROR: Malicious link found",utils.isMaliciousLinkPresentInForm(targetForm));
-        // TODO: check field missing:pageTitle
-        
     }
 }
         

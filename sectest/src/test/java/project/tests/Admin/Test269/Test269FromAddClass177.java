@@ -29,14 +29,9 @@ public class Test269FromAddClass177 extends AdminBaseTest {
         //ATTACK
         utils.injectVarMyForm(taintedVar);
         
-        assertTrue("ERROR: Title doesn't match",utils.isTitleEqualsTo(MainTitle));
-        
-        //found possible title for page: Add New Class
-        
+        assertTrue("ERROR: Title doesn't match",utils.isTitleEqualsTo(addClassTitle));
         
         assertFalse("ERROR: Malicious link found",utils.isMaliciousLinkPresentInForm(targetForm));
-        
-// TODO: check added field: fullyear
 
     }
 }

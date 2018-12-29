@@ -29,15 +29,10 @@ public class Test191FromAdminMain7 extends AdminBaseTest {
         //ATTACK
         utils.injectVarMyForm(taintedVar);
         
-        assertTrue("ERROR: Title doesn't match",utils.isTitleEqualsTo(MainTitle));
-        
-        //found possible title for page: Deficiency Report
-        
+        assertTrue("ERROR: Title doesn't match",utils.isTitleEqualsTo(deficiencyTitle));
         
         assertFalse("ERROR: Malicious link found",utils.isMaliciousLinkPresentInForm(targetForm));
         
-// TODO: check added field: semester
-
     }
 }
         

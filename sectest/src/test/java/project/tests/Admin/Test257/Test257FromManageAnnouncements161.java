@@ -24,35 +24,15 @@ public class Test257FromManageAnnouncements161 extends AdminBaseTest {
         utils.createMyForm();
         utils.addFieldToMyFormWithValue("page","1");
         utils.addFieldToMyFormWithValue("page2","4");
-        //utils.addFieldToMyFormWithValue("message","1");
-        //utils.addFieldToMyFormWithValue("date","1");
-        //utils.addFieldToMyFormWithValue("announcementid","1");
-        //utils.addFieldToMyFormWithValue("deleteannouncement","1");
-        //utils.addFieldToMyFormWithValue("delete","1");
         utils.addFieldToMyFormWithValue("onpage","1");
-                
+
         //ATTACK
         utils.injectVarMyForm(taintedVar);
-        
-        assertTrue("ERROR: Title doesn't match",utils.isTitleEqualsTo(MainTitle));
-        
-        //found possible title for page: Manage Announcements
-        
-        
+
+        assertTrue("ERROR: Title doesn't match",utils.isTitleEqualsTo(manageAnnouncementsTitle));
+
         assertFalse("ERROR: Malicious link found",utils.isMaliciousLinkPresentInForm(targetForm));
         
-// TODO: check added field: message
-
-// TODO: check added field: date
-
-// TODO: check added field: announcementid
-
-// TODO: check added field: deleteannouncement
-
-// TODO: check added field: delete
-
-// TODO: check added field: onpage
-
     }
 }
         

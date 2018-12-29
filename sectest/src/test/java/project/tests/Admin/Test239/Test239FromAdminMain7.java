@@ -24,20 +24,15 @@ public class Test239FromAdminMain7 extends AdminBaseTest {
         utils.createMyForm();
         utils.addFieldToMyFormWithValue("page","1");
         utils.addFieldToMyFormWithValue("page2","11");
-        //utils.addFieldToMyFormWithValue("delete","1");
-        
+        utils.addFieldToMyFormWithValue("delete","1");
+
         //ATTACK
         utils.injectVarMyForm(taintedVar);
         
-        assertTrue("ERROR: Title doesn't match",utils.isTitleEqualsTo(MainTitle));
-        
-        //found possible title for page: Edit Class
-        
+        assertTrue("ERROR: Title doesn't match",utils.isTitleEqualsTo(editClassTitle));
         
         assertFalse("ERROR: Malicious link found",utils.isMaliciousLinkPresentInForm(targetForm));
         
-// TODO: check added field: delete
-
     }
 }
         

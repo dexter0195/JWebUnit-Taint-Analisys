@@ -24,34 +24,14 @@ public class Test260FromManageTerms164 extends AdminBaseTest {
         utils.createMyForm();
         utils.addFieldToMyFormWithValue("page","1");
         utils.addFieldToMyFormWithValue("page2","6");
-        //utils.addFieldToMyFormWithValue("enddate","1");
-        //utils.addFieldToMyFormWithValue("startdate","1");
-        //utils.addFieldToMyFormWithValue("termid","1");
-        //utils.addFieldToMyFormWithValue("deleteterm","1");
-        //utils.addFieldToMyFormWithValue("delete","1");
         utils.addFieldToMyFormWithValue("onpage","1");
-                
+
         //ATTACK
         utils.injectVarMyForm(taintedVar);
-        
-        assertTrue("ERROR: Title doesn't match",utils.isTitleEqualsTo(MainTitle));
-        
-        //found possible title for page: Manage Terms
-        
-        
+
+        assertTrue("ERROR: Title doesn't match",utils.isTitleEqualsTo(manageTermsTitle));
+
         assertFalse("ERROR: Malicious link found",utils.isMaliciousLinkPresentInForm(targetForm));
-        
-// TODO: check added field: enddate
-
-// TODO: check added field: startdate
-
-// TODO: check added field: termid
-
-// TODO: check added field: deleteterm
-
-// TODO: check added field: delete
-
-// TODO: check added field: onpage
 
     }
 }
