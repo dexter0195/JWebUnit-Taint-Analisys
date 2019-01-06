@@ -114,4 +114,35 @@ public class myUtils {
         String heading = driver.findElement(By.xpath("//h1")).getText();
         return heading.equals(s);
     }
+
+    public void createMyFormForManageSchoolInfo() {
+        createMyForm();
+        addFieldToMyFormWithValue("page","1");
+        addFieldToMyFormWithValue("page2","1");
+        addFieldToMyFormWithValue("schoolname",
+          driver.findElement(By.xpath("//input[@name='schoolname']")).getAttribute("value"));
+        addFieldToMyFormWithValue("schooladdress",
+          driver.findElement(By.xpath("//input[@name='schooladdress']")).getAttribute("value"));
+        addFieldToMyFormWithValue("schoolphone",
+          driver.findElement(By.xpath("//input[@name='schoolphone']")).getAttribute("value"));
+        addFieldToMyFormWithValue("numsemesters",
+          driver.findElement(By.xpath("//input[@name='numsemesters']")).getAttribute("value"));
+        addFieldToMyFormWithValue("numperiods",
+          driver.findElement(By.xpath("//input[@name='numperiods']")).getAttribute("value"));
+        addFieldToMyFormWithValue("apoint",
+          driver.findElement(By.xpath("//input[@name='apoint']")).getAttribute("value"));
+        addFieldToMyFormWithValue("bpoint",
+          driver.findElement(By.xpath("//input[@name='bpoint']")).getAttribute("value"));
+        addFieldToMyFormWithValue("cpoint",
+          driver.findElement(By.xpath("//input[@name='cpoint']")).getAttribute("value"));
+        addFieldToMyFormWithValue("dpoint",
+          driver.findElement(By.xpath("//input[@name='dpoint']")).getAttribute("value"));
+        addFieldToMyFormWithValue("fpoint",
+          driver.findElement(By.xpath("//input[@name='fpoint']")).getAttribute("value"));
+        addFieldToMyFormWithValue("sitetext",
+          driver.findElement(By.xpath("//textarea[@name='sitetext']")).getAttribute("value"), "textarea");
+        addFieldToMyFormWithValue("sitemessage",
+          driver.findElement(By.xpath("//textarea[@name='sitemessage']")).getAttribute("value"), "textarea");
+        addFieldToMyFormWithValue("infoupdate","1");
+    }
 }
