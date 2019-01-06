@@ -5,7 +5,7 @@ import org.junit.*;
 import static org.junit.Assert.*;
 import project.tests.Admin.AdminBaseTest;
         
-public class Test13FromAddAttendance3 extends AdminBaseTest { 
+public class Test13FromAddAttendance3_semester extends AdminBaseTest {
 
 
     @Test

@@ -1,5 +1,6 @@
 package project.utils;
 
+import org.apache.commons.lang.StringEscapeUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -85,6 +86,17 @@ public class myUtils {
 
     }
 
+    public void addFieldToMyFormWithValue(String var, String s, String type) {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+
+        String javascript = "var f = document.getElementById('myform');"
+                +"var i = document.createElement('textarea');"
+                +"i.setAttribute('name','"+var+"');"
+                +"i.innerText = '"+ StringEscapeUtils.escapeJavaScript(s) +"';"
+                +"f.appendChild(i);";
+
+        js.executeScript(javascript);
+    }
     public void addFieldToMyFormWithValue(String var, String s) {
         JavascriptExecutor js = (JavascriptExecutor) driver;
 
