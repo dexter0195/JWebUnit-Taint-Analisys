@@ -41,7 +41,7 @@ public class Test76FromEditGrade50_selectclass extends TeacherBaseTest {
         utils.createMyForm();
         utils.addFieldToMyFormWithValue("page","2");
         utils.addFieldToMyFormWithValue("page2","7");
-        utils.addFieldToMyFormWithValue("delete","1");
+        utils.addFieldToMyFormWithValue("delete[]","1");
         utils.addFieldToMyFormWithValue("assignment","2");
         utils.addFieldToMyFormWithValue("selectclass","8");
 

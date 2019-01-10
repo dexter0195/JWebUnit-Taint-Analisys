@@ -11,7 +11,7 @@ public class Test239FromEditClass2 extends AdminBaseTest {
     @Test
     public void test() {
 
-        String taintedVar = "delete";
+        String taintedVar = "delete[]";
         String targetForm = "editclass";
 
         //login
@@ -24,7 +24,7 @@ public class Test239FromEditClass2 extends AdminBaseTest {
         utils.createMyForm();
         utils.addFieldToMyFormWithValue("page","1");
         utils.addFieldToMyFormWithValue("page2","11");
-        utils.addFieldToMyFormWithValue("delete","1");
+        utils.addFieldToMyFormWithValue("delete[]","1");
 
         //ATTACK
         utils.injectVarMyForm(taintedVar);
@@ -33,8 +33,6 @@ public class Test239FromEditClass2 extends AdminBaseTest {
 
         assertFalse("ERROR: Malicious link found",utils.isMaliciousLinkPresentInForm(targetForm));
 
-        //TODO: FP delete
-        
     }
 }
         

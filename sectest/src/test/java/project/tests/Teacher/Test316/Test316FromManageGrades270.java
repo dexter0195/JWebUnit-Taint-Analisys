@@ -50,7 +50,6 @@ public class Test316FromManageGrades270 extends TeacherBaseTest {
 
         assertFalse("ERROR: Malicious link found",utils.isMaliciousLinkPresentInForm(targetForm));
 
-        // TODO: inconsistenza nelle query successive, rompe la pagina
 
     }
 }

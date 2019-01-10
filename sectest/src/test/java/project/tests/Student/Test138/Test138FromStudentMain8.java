@@ -36,7 +36,7 @@ public class Test138FromStudentMain8 extends StudentBaseTest {
 
         assertFalse("ERROR: Malicious link found",utils.isMaliciousLinkPresentInPath("//td[@class='w']//td"));
 
-        //TODO: spiegare perche` non e` possibile controllare la presenza del link nel form, ovvero perche` l'html del sito
+        //non e` possibile controllare la presenza del link nel form, ovvero perche` l'html del sito
         // e` malformato
 
     }

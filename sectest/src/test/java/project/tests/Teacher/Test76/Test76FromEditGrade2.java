@@ -11,7 +11,7 @@ public class Test76FromEditGrade2 extends TeacherBaseTest {
     @Test
     public void test() {
 
-        String taintedVar = "delete";
+        String taintedVar = "delete[]";
         String targetForm = "editgrade";
 
         //login
@@ -24,7 +24,7 @@ public class Test76FromEditGrade2 extends TeacherBaseTest {
         utils.createMyForm();
         utils.addFieldToMyFormWithValue("page","2");
         utils.addFieldToMyFormWithValue("page2","7");
-        utils.addFieldToMyFormWithValue("delete","1");
+        utils.addFieldToMyFormWithValue("delete[]","1");
         utils.addFieldToMyFormWithValue("assignment","2");
         utils.addFieldToMyFormWithValue("selectclass","8");
 
@@ -34,8 +34,6 @@ public class Test76FromEditGrade2 extends TeacherBaseTest {
         assertTrue("ERROR: Title doesn't match",utils.isTitleEqualsTo(editGradeTitle));
 
         assertFalse("ERROR: Malicious link found",utils.isMaliciousLinkPresentInForm(targetForm));
-
-        // TODO: falso positivo perche` di delete si usa solo un carattere
 
     }
 }

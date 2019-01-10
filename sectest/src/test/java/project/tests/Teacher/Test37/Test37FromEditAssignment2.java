@@ -11,7 +11,7 @@ public class Test37FromEditAssignment2 extends TeacherBaseTest {
     @Test
     public void test() {
 
-        String taintedVar = "delete";
+        String taintedVar = "delete[]";
         String targetForm = "editassignment";
 
         //login
@@ -24,7 +24,7 @@ public class Test37FromEditAssignment2 extends TeacherBaseTest {
         utils.createMyForm();
         utils.addFieldToMyFormWithValue("page","2");
         utils.addFieldToMyFormWithValue("page2","5");
-        utils.addFieldToMyFormWithValue("delete","1");
+        utils.addFieldToMyFormWithValue("delete[]","1");
         utils.addFieldToMyFormWithValue("selectclass","8");
         
         //ATTACK
@@ -33,8 +33,6 @@ public class Test37FromEditAssignment2 extends TeacherBaseTest {
         assertTrue("ERROR: Title doesn't match",utils.isTitleEqualsTo(editAssignmentTitle));
 
         assertFalse("ERROR: Malicious link found",utils.isMaliciousLinkPresentInForm(targetForm));
-
-        //TODO: spiegare che e` un falso positivo: questa e` una falsa vulneravilita` perche viene usato un solo carattere della variabile delete
 
     }
 }

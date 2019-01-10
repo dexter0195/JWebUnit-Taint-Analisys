@@ -11,7 +11,7 @@ public class Test41FromEditAnnouncements2 extends AdminBaseTest {
     @Test
     public void test() {
 
-        String taintedVar = "delete";
+        String taintedVar = "delete[]";
         String targetForm = "editannouncement";
 
         //login
@@ -20,20 +20,18 @@ public class Test41FromEditAnnouncements2 extends AdminBaseTest {
         login(getUsername(),getPassword());
         assertTrue("ERROR: cannot login", isLoggedIn());
         
-//        //create the custom form with navigation to target page
-//        utils.createMyForm();
-//        utils.addFieldToMyFormWithValue("page","1");
-//        utils.addFieldToMyFormWithValue("page2","19");
-//        //utils.addFieldToMyFormWithValue("delete","1");
-//
-//        //ATTACK
-//        utils.injectVarMyForm(taintedVar);
-//
-//        assertTrue("ERROR: Title doesn't match",utils.isTitleEqualsTo(MainTitle));
-//
-//        assertFalse("ERROR: Malicious link found",utils.isMaliciousLinkPresentInForm(targetForm));
+        //create the custom form with navigation to target page
+        utils.createMyForm();
+        utils.addFieldToMyFormWithValue("page","1");
+        utils.addFieldToMyFormWithValue("page2","19");
+        //utils.addFieldToMyFormWithValue("delete[]","1");
 
-        // TODO: della delete si usa solo il primo carattere = falso positivo
+        //ATTACK
+        utils.injectVarMyForm(taintedVar);
+
+        assertTrue("ERROR: Title doesn't match",utils.isTitleEqualsTo(MainTitle));
+
+        assertFalse("ERROR: Malicious link found",utils.isMaliciousLinkPresentInForm(targetForm));
 
     }
 }

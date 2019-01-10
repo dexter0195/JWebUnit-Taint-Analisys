@@ -24,7 +24,7 @@ public class Test37FromTeacherMain8 extends TeacherBaseTest {
         utils.createMyForm();
         utils.addFieldToMyFormWithValue("page","2");
         utils.addFieldToMyFormWithValue("page2","5");
-        utils.addFieldToMyFormWithValue("delete","1");
+        utils.addFieldToMyFormWithValue("delete[]","1");
         utils.addFieldToMyFormWithValue("selectclass","8");
 
         //ATTACK

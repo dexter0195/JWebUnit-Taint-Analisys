@@ -11,7 +11,7 @@ public class Test161FromEditParent2 extends AdminBaseTest {
     @Test
     public void test() {
 
-        String taintedVar = "delete";
+        String taintedVar = "delete[]";
         String targetForm = "editparent";
 
         //login
@@ -24,7 +24,7 @@ public class Test161FromEditParent2 extends AdminBaseTest {
         utils.createMyForm();
         utils.addFieldToMyFormWithValue("page","1");
         utils.addFieldToMyFormWithValue("page2","24");
-        utils.addFieldToMyFormWithValue("delete","2");
+        utils.addFieldToMyFormWithValue("delete[]","2");
         utils.addFieldToMyFormWithValue("studentid","3");
 
         //ATTACK
@@ -33,8 +33,7 @@ public class Test161FromEditParent2 extends AdminBaseTest {
         assertTrue("ERROR: Title doesn't match",utils.isTitleEqualsTo(editParentTitle));
 
         assertFalse("ERROR: Malicious link found",utils.isMaliciousLinkPresentInForm(targetForm));
-        // TODO: FP delete
-        
+
     }
 }
         

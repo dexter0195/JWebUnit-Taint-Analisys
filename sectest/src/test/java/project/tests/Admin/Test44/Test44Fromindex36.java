@@ -24,7 +24,7 @@ public class Test44Fromindex36 extends AdminBaseTest {
         utils.createMyForm();
         utils.addFieldToMyFormWithValue("page","1");
         utils.addFieldToMyFormWithValue("page2","12");
-        utils.addFieldToMyFormWithValue("delete","1");
+        utils.addFieldToMyFormWithValue("delete[]","1");
         
         //ATTACK
         utils.injectVarMyForm(taintedVar);

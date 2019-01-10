@@ -14,6 +14,7 @@ public class BaseTest {
 
     protected WebDriver driver;
     private static String baseUrl = "http://192.168.56.103/schoolmate/index.php";
+//    private static String baseUrl = "http://192.168.56.103/schoolmate-new/index.php";
 //    private static String baseUrl = "http://192.168.56.103/schoolmate-patched/index.php";
     private StringBuffer verificationErrors = new StringBuffer();
 

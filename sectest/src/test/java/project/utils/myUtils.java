@@ -86,7 +86,7 @@ public class myUtils {
 
     }
 
-    public void addFieldToMyFormWithValue(String var, String s, String type) {
+    public void addFieldToMyFormWithValue(String var, String s, String name) {
         JavascriptExecutor js = (JavascriptExecutor) driver;
 
         String javascript = "var f = document.getElementById('myform');"
@@ -140,9 +140,9 @@ public class myUtils {
         addFieldToMyFormWithValue("fpoint",
           driver.findElement(By.xpath("//input[@name='fpoint']")).getAttribute("value"));
         addFieldToMyFormWithValue("sitetext",
-          driver.findElement(By.xpath("//textarea[@name='sitetext']")).getAttribute("value"), "textarea");
+          driver.findElement(By.xpath("//textarea[@name='sitetext']")).getAttribute("value"), "sitetext");
         addFieldToMyFormWithValue("sitemessage",
-          driver.findElement(By.xpath("//textarea[@name='sitemessage']")).getAttribute("value"), "textarea");
+          driver.findElement(By.xpath("//textarea[@name='sitemessage']")).getAttribute("value"), "sitemessage");
         addFieldToMyFormWithValue("infoupdate","1");
     }
 }

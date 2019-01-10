@@ -11,30 +11,29 @@ public class Test149FromEditUser2 extends AdminBaseTest {
     @Test
     public void test() {
 
-        String taintedVar = "delete";
+        String taintedVar = "delete[]";
         String targetForm = "edituser";
 
-//        //login
-//        goToLoginPage();
-//        assertTrue("ERROR: cannot go to log in page", isLoginPage());
-//        login(getUsername(),getPassword());
-//        assertTrue("ERROR: cannot login", isLoggedIn());
-//
-//        //create the custom form with navigation to target page
-//        utils.createMyForm();
-//        utils.addFieldToMyFormWithValue("page","1");
-//        utils.addFieldToMyFormWithValue("page2","15");
-//        utils.addFieldToMyFormWithValue("delete","3");
-//
-//        //ATTACK
-//        utils.injectVarMyForm(taintedVar);
-//
-//        assertTrue("ERROR: Title doesn't match",utils.isTitleEqualsTo(editUserTitle));
-//
-//        assertFalse("ERROR: Malicious link found",utils.isMaliciousLinkPresentInForm(targetForm));
+        //login
+        goToLoginPage();
+        assertTrue("ERROR: cannot go to log in page", isLoginPage());
+        login(getUsername(),getPassword());
+        assertTrue("ERROR: cannot login", isLoggedIn());
 
-        //TODO : FP delete
-        
+        //create the custom form with navigation to target page
+        utils.createMyForm();
+        utils.addFieldToMyFormWithValue("page","1");
+        utils.addFieldToMyFormWithValue("page2","15");
+        utils.addFieldToMyFormWithValue("delete[]","3");
+
+        //ATTACK
+        utils.injectVarMyForm(taintedVar);
+
+        assertTrue("ERROR: Title doesn't match",utils.isTitleEqualsTo(editUserTitle));
+
+        assertFalse("ERROR: Malicious link found",utils.isMaliciousLinkPresentInForm(targetForm));
+
+
     }
 }
         
