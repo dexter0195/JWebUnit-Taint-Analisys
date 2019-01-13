@@ -24,8 +24,8 @@ public class Test194FromParentMain8 extends ParentBaseTest {
         utils.createMyForm();
         utils.addFieldToMyFormWithValue("page","5");
         utils.addFieldToMyFormWithValue("page2","0");
-        //utils.addFieldToMyFormWithValue("student","1");
-        //utils.addFieldToMyFormWithValue("selectclass","1");
+        utils.addFieldToMyFormWithValue("student","3");
+        utils.addFieldToMyFormWithValue("selectclass","7");
         
         //ATTACK
         utils.injectVarMyForm(taintedVar);

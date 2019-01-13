@@ -24,12 +24,12 @@ public class Test41FromEditAnnouncements2 extends AdminBaseTest {
         utils.createMyForm();
         utils.addFieldToMyFormWithValue("page","1");
         utils.addFieldToMyFormWithValue("page2","19");
-        //utils.addFieldToMyFormWithValue("delete[]","1");
+        utils.addFieldToMyFormWithValue("delete[]","1");
 
         //ATTACK
-        utils.injectVarMyForm(taintedVar);
+        utils.injectVarMyFormForSQL(taintedVar);
 
-        assertTrue("ERROR: Title doesn't match",utils.isTitleEqualsTo(MainTitle));
+        assertTrue("ERROR: Title doesn't match",utils.isTitleEqualsTo(editAnnouncementTitle));
 
         assertFalse("ERROR: Malicious link found",utils.isMaliciousLinkPresentInForm(targetForm));
 

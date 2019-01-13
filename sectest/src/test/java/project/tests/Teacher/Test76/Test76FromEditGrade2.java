@@ -24,12 +24,12 @@ public class Test76FromEditGrade2 extends TeacherBaseTest {
         utils.createMyForm();
         utils.addFieldToMyFormWithValue("page","2");
         utils.addFieldToMyFormWithValue("page2","7");
-        utils.addFieldToMyFormWithValue("delete[]","1");
+        utils.addFieldToMyFormWithValue("delete[]","4");
         utils.addFieldToMyFormWithValue("assignment","2");
         utils.addFieldToMyFormWithValue("selectclass","8");
 
         //ATTACK
-        utils.injectVarMyForm(taintedVar);
+        utils.injectVarMyFormForSQL(taintedVar, "'; -- ><a href=\'www.unitn.it\'>Malicious Link</a> <br'");
 
         assertTrue("ERROR: Title doesn't match",utils.isTitleEqualsTo(editGradeTitle));
 

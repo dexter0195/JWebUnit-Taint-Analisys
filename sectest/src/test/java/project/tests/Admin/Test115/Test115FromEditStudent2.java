@@ -24,10 +24,10 @@ public class Test115FromEditStudent2 extends AdminBaseTest {
         utils.createMyForm();
         utils.addFieldToMyFormWithValue("page","1");
         utils.addFieldToMyFormWithValue("page2","21");
-        //utils.addFieldToMyFormWithValue("delete[]","1");
+        utils.addFieldToMyFormWithValue("delete[]","3");
 
         //ATTACK
-        utils.injectVarMyForm(taintedVar);
+        utils.injectVarMyFormForSQL(taintedVar);
 
         assertTrue("ERROR: Title doesn't match",utils.isTitleEqualsTo(editStudentTitle));
 

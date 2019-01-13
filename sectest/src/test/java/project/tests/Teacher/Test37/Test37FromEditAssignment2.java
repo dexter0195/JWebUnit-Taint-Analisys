@@ -28,7 +28,7 @@ public class Test37FromEditAssignment2 extends TeacherBaseTest {
         utils.addFieldToMyFormWithValue("selectclass","8");
         
         //ATTACK
-        utils.injectVarMyForm(taintedVar);
+        utils.injectVarMyFormForSQL(taintedVar);
         
         assertTrue("ERROR: Title doesn't match",utils.isTitleEqualsTo(editAssignmentTitle));
 

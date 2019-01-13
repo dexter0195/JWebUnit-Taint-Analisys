@@ -26,9 +26,10 @@ public class Test161FromEditParent2 extends AdminBaseTest {
         utils.addFieldToMyFormWithValue("page2","24");
         utils.addFieldToMyFormWithValue("delete[]","2");
         utils.addFieldToMyFormWithValue("studentid","3");
+        utils.addFieldToMyFormWithValue("selectparent","1");
 
         //ATTACK
-        utils.injectVarMyForm(taintedVar);
+        utils.injectVarMyFormForSQL(taintedVar, " /*'><a href=\'www.unitn.it\'>Malicious Link</a> <br'*/");
 
         assertTrue("ERROR: Title doesn't match",utils.isTitleEqualsTo(editParentTitle));
 

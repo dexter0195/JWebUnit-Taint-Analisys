@@ -13,12 +13,25 @@ import static org.junit.Assert.fail;
 public class BaseTest {
 
     protected WebDriver driver;
-    private static String baseUrl = "http://192.168.56.103/schoolmate/index.php";
-//    private static String baseUrl = "http://192.168.56.103/schoolmate-new/index.php";
-//    private static String baseUrl = "http://192.168.56.103/schoolmate-patched/index.php";
+    private static String baseUrl = "";
     private StringBuffer verificationErrors = new StringBuffer();
 
     protected static myUtils utils;
+
+    protected boolean testPatchedSite = true;
+    private static boolean headless = true;
+
+    protected String getBaseUrl(){
+        if (testPatchedSite) {
+            System.out.println("testing patched site...");
+            return  "http://192.168.56.103/schoolmate-new/index.php";
+        }
+
+        else{
+            System.out.println("testing NOT patched site...");
+            return  "http://192.168.56.103/schoolmate/index.php";
+        }
+    }
 
 
     protected void goToLoginPage(){
@@ -50,7 +63,9 @@ public class BaseTest {
         System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE,"/dev/null");
 
         FirefoxOptions options = new FirefoxOptions();
-        options.setHeadless(false);
+        options.setHeadless(headless);
+
+        baseUrl = getBaseUrl();
 
         driver = new FirefoxDriver(options);
 

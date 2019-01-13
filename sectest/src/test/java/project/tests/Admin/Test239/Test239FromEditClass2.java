@@ -27,7 +27,7 @@ public class Test239FromEditClass2 extends AdminBaseTest {
         utils.addFieldToMyFormWithValue("delete[]","1");
 
         //ATTACK
-        utils.injectVarMyForm(taintedVar);
+        utils.injectVarMyFormForSQL(taintedVar);
 
         assertTrue("ERROR: Title doesn't match",utils.isTitleEqualsTo(editClassTitle));
 

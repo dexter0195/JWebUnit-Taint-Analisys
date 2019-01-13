@@ -61,10 +61,10 @@
             <properties>
               <property>
                 <name>surefire.testng.verbose</name>
-                <value>10</value>
+                <value>8</value>
               </property>
             </properties>
-            <forkCount>5</forkCount>
+            <forkCount>10</forkCount>
             <reuseForks>false</reuseForks>
           </configuration>
         </plugin>

@@ -49,6 +49,21 @@ public class myUtils {
 
     }
 
+    public void injectVarMyFormForSQL(String variable, String injectionString) {
+
+        String formName = "myform";
+
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        WebElement target = getVarElement(formName, variable);
+        String currentPageValue = target.getAttribute("value");
+        String injection = currentPageValue+injectionString;
+        String script = "arguments[0].setAttribute(\"value\",\""+injection+"\")";
+        js.executeScript(script, target);
+
+        submitForm(formName);
+        SimpleSleep(1);
+    }
+
     public void injectVarMyFormForSQL(String variable) {
 
         String formName = "myform";
