@@ -1,36 +1,83 @@
 package project.tests;
 
+import org.junit.After;
+import org.junit.Before;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
-import project.PageObjects.LoginPage;
-import org.junit.*;
-import java.util.concurrent.TimeUnit;
+import project.utils.myUtils;
+
+import static org.junit.Assert.fail;
 
 public class BaseTest {
 
     protected WebDriver driver;
-    protected LoginPage pageTest;
+    private static String baseUrl = "";
+    private StringBuffer verificationErrors = new StringBuffer();
 
-    protected LoginPage loginPage;
+    protected static myUtils utils;
 
-    private void setEnvironment(){
-        System.setProperty(FirefoxDriver.SystemProperty.DRIVER_USE_MARIONETTE,"true");
-        System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE,"/dev/null");
-        FirefoxOptions options = new FirefoxOptions();
-        options.setHeadless(false);
-        driver = new FirefoxDriver(options);
-//        driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
+    protected boolean testPatchedSite = true;
+    private static boolean headless = true;
+
+    protected String getBaseUrl(){
+        if (testPatchedSite) {
+            System.out.println("testing patched site...");
+            return  "http://192.168.56.103/schoolmate-new/index.php";
+        }
+
+        else{
+            System.out.println("testing NOT patched site...");
+            return  "http://192.168.56.103/schoolmate/index.php";
+        }
+    }
+
+
+    protected void goToLoginPage(){
+        driver.get(baseUrl);
+        utils.SimpleSleep(1);
+    }
+
+    protected boolean isLoginPage(){
+        return driver.findElements(
+                By.xpath("//form[@name='login']//input[@type='submit'][@value='Login']")).size() > 0;
+    }
+
+    protected boolean isLoggedIn(){
+        return driver.findElements(
+                By.xpath("//a[contains(text(),'Log Out')]")).size() > 0;
+    }
+
+    public void login(String user, String pass){
+        driver.findElement(By.name("username")).clear();
+        driver.findElement(By.name("username")).sendKeys(user);
+        driver.findElement(By.name("password")).clear();
+        driver.findElement(By.name("password")).sendKeys(pass);
+        driver.findElement(By.xpath("//input[@value='Login']")).click();
     }
 
     @Before
-    public void prepareBase(){
-        setEnvironment();
-        loginPage = new LoginPage(driver);
+    public void setUp() {
+        System.setProperty(FirefoxDriver.SystemProperty.DRIVER_USE_MARIONETTE,"true");
+        System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE,"/dev/null");
+
+        FirefoxOptions options = new FirefoxOptions();
+        options.setHeadless(headless);
+
+        baseUrl = getBaseUrl();
+
+        driver = new FirefoxDriver(options);
+
+        utils = new myUtils(driver);
     }
 
     @After
-    public void cleanUpBase(){
-        driver.close();
+    public void tearDown() {
+        driver.quit();
+        String verificationErrorString = verificationErrors.toString();
+        if (!"".equals(verificationErrorString)) {
+            fail(verificationErrorString);
+        }
     }
 }

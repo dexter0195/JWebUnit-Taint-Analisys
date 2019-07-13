@@ -1,0 +1,1314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d9d85044-c076-48e5-a4bb-37e8d260f3f3" name="Default Changelist" comment="fix the tests with the delete function">
+      <change beforePath="$PROJECT_DIR$/../misc/notes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myschoolmate_alessio_trivisonno.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/project/tests/Admin/Test111/Test111FromEditTeacher2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/project/tests/Admin/Test111/Test111FromEditTeacher2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/project/tests/Admin/Test115/Test115FromEditStudent2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/project/tests/Admin/Test115/Test115FromEditStudent2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/project/tests/Admin/Test13/Test13FromAddAttendance3_semester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/project/tests/Admin/Test13/Test13FromAddAttendance3_semester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/project/tests/Admin/Test13/Test13FromAddAttendance3_student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/project/tests/Admin/Test13/Test13FromAddAttendance3_student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/project/tests/Admin/Test149/Test149FromEditUser2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/project/tests/Admin/Test149/Test149FromEditUser2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/project/tests/Admin/Test161/Test161FromEditParent2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/project/tests/Admin/Test161/Test161FromEditParent2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/project/tests/Admin/Test239/Test239FromEditClass2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/project/tests/Admin/Test239/Test239FromEditClass2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/project/tests/Admin/Test41/Test41FromEditAnnouncements2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/project/tests/Admin/Test41/Test41FromEditAnnouncements2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/project/tests/Admin/Test41/Test41Fromindex36.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/project/tests/Admin/Test41/Test41Fromindex36.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/project/tests/Admin/Test44/Test44FromEditTerm2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/project/tests/Admin/Test44/Test44FromEditTerm2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/project/tests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/project/tests/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/project/tests/Parent/Test183/Test183FromViewAssignments85_selectclass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/project/tests/Parent/Test183/Test183FromViewAssignments85_selectclass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/project/tests/Parent/Test194/Test194FromParentMain8.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/project/tests/Parent/Test194/Test194FromParentMain8.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/project/tests/Student/Test184/Test184FromViewAssignments85_selectclass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/project/tests/Student/Test184/Test184FromViewAssignments85_selectclass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/project/tests/Teacher/Test309/Test309FromManageAssignments257_selectclass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/project/tests/Teacher/Test309/Test309FromManageAssignments257_selectclass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/project/tests/Teacher/Test316/Test316FromManageGrades270.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/project/tests/Teacher/Test316/Test316FromManageGrades270.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/project/tests/Teacher/Test37/Test37FromEditAssignment2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/project/tests/Teacher/Test37/Test37FromEditAssignment2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/project/tests/Teacher/Test76/Test76FromEditGrade2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/project/tests/Teacher/Test76/Test76FromEditGrade2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/project/tests/Teacher/Test76/Test76FromEditGrade50_selectclass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/project/tests/Teacher/Test76/Test76FromEditGrade50_selectclass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/project/utils/myUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/project/utils/myUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/project/tests/Admin/Test111/Test111FromAdminMain7.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/project/tests/Admin/Test111/Test111FromAdminMain7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/project/tests/Admin/Test111/Test111FromEditTeacher2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/project/tests/Admin/Test111/Test111FromEditTeacher2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/project/tests/Admin/Test111/Test111Fromindex36.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/project/tests/Admin/Test111/Test111Fromindex36.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/project/tests/Admin/Test115/Test115FromAdminMain7.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/project/tests/Admin/Test115/Test115FromAdminMain7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/project/tests/Admin/Test115/Test115FromEditStudent2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/project/tests/Admin/Test115/Test115FromEditStudent2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/project/tests/Admin/Test115/Test115Fromindex36.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/project/tests/Admin/Test115/Test115Fromindex36.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/project/tests/Admin/Test149/Test149FromAdminMain7.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/project/tests/Admin/Test149/Test149FromAdminMain7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/project/tests/Admin/Test149/Test149FromEditUser2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/project/tests/Admin/Test149/Test149FromEditUser2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/project/tests/Admin/Test149/Test149Fromindex36.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/project/tests/Admin/Test149/Test149Fromindex36.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/project/tests/Admin/Test161/Test161FromAdminMain7.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/project/tests/Admin/Test161/Test161FromAdminMain7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/project/tests/Admin/Test161/Test161FromEditParent2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/project/tests/Admin/Test161/Test161FromEditParent2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/project/tests/Admin/Test161/Test161Fromindex36.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/project/tests/Admin/Test161/Test161Fromindex36.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/project/tests/Admin/Test239/Test239FromAdminMain7.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/project/tests/Admin/Test239/Test239FromAdminMain7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/project/tests/Admin/Test239/Test239FromEditClass2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/project/tests/Admin/Test239/Test239FromEditClass2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/project/tests/Admin/Test239/Test239Fromindex36.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/project/tests/Admin/Test239/Test239Fromindex36.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/project/tests/Admin/Test41/Test41FromAdminMain7.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/project/tests/Admin/Test41/Test41FromAdminMain7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/project/tests/Admin/Test41/Test41FromEditAnnouncements2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/project/tests/Admin/Test41/Test41FromEditAnnouncements2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/project/tests/Admin/Test41/Test41Fromindex36.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/project/tests/Admin/Test41/Test41Fromindex36.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/project/tests/Admin/Test44/Test44FromAdminMain7.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/project/tests/Admin/Test44/Test44FromAdminMain7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/project/tests/Admin/Test44/Test44FromEditTerm2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/project/tests/Admin/Test44/Test44FromEditTerm2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/project/tests/Admin/Test44/Test44Fromindex36.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/project/tests/Admin/Test44/Test44Fromindex36.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/project/tests/Admin/Test85/Test85FromAdminMain7.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/project/tests/Admin/Test85/Test85FromAdminMain7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/project/tests/Admin/Test85/Test85FromEditSemester2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/project/tests/Admin/Test85/Test85FromEditSemester2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/project/tests/Admin/Test85/Test85Fromindex36.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/project/tests/Admin/Test85/Test85Fromindex36.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/project/tests/BaseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/project/tests/BaseTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/project/tests/Parent/Test194/Test194FromParentMain8.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/project/tests/Parent/Test194/Test194FromParentMain8.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/project/tests/Teacher/Test316/Test316FromManageGrades270.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/project/tests/Teacher/Test316/Test316FromManageGrades270.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/project/tests/Teacher/Test37/Test37FromEditAssignment2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/project/tests/Teacher/Test37/Test37FromEditAssignment2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/project/tests/Teacher/Test37/Test37FromEditAssignment27.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/project/tests/Teacher/Test37/Test37FromEditAssignment27.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/project/tests/Teacher/Test37/Test37FromTeacherMain8.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/project/tests/Teacher/Test37/Test37FromTeacherMain8.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/project/tests/Teacher/Test37/Test37Fromindex36.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/project/tests/Teacher/Test37/Test37Fromindex36.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/project/tests/Teacher/Test76/Test76FromEditGrade2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/project/tests/Teacher/Test76/Test76FromEditGrade2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/project/tests/Teacher/Test76/Test76FromTeacherMain8.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/project/tests/Teacher/Test76/Test76FromTeacherMain8.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/project/utils/myUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/project/utils/myUtils.class" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="352">
+              <caret line="63" column="23" selection-start-line="63" selection-start-column="23" selection-end-line="63" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>delete</find>
+      <find>taintedVar = &quot;delete</find>
+      <find>delete[][]</find>
+      <find>= &quot;delete[]</find>
+      <find>public void injectVarMyFormForSQL</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>delete[]</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/test/java/project/tests/Admin/Test293/Test293Fromindex36.java" />
+        <option value="$PROJECT_DIR$/src/test/java/project/tests/Admin/Test293/Test293FromAdminMain7.java" />
+        <option value="$PROJECT_DIR$/src/test/java/project/tests/Admin/AdminBaseTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/project/tests/Admin/Test299/Test299FromAdminMain7.java" />
+        <option value="$PROJECT_DIR$/src/test/java/project/tests/Admin/Test299/Test299Fromindex36.java" />
+        <option value="$PROJECT_DIR$/src/test/java/project/tests/Admin/Test320/Test320FromManageClasses303.java" />
+        <option value="$PROJECT_DIR$/src/test/java/project/tests/Admin/Test320/Test320Fromindex36.java" />
+        <option value="$PROJECT_DIR$/src/test/java/project/tests/Admin/Test320/Test320FromAdminMain7.java" />
+        <option value="$PROJECT_DIR$/src/test/java/project/tests/Student/Test88/Test88FromViewClassSettings36.java" />
+        <option value="$PROJECT_DIR$/src/test/java/project/tests/Student/Test88/Test88Fromindex36.java" />
+        <option value="$PROJECT_DIR$/src/test/java/project/tests/Student/Test88/Test88FromStudentMain8.java" />
+        <option value="$PROJECT_DIR$/src/test/java/project/tests/Student/Test184/Test184FromStudentMain8.java" />
+        <option value="$PROJECT_DIR$/src/test/java/project/tests/Teacher/Test76/Test76FromEditGrade50_assignment.java" />
+        <option value="$PROJECT_DIR$/src/test/java/project/tests/Admin/Test92/Test92FromAdminMain7.java" />
+        <option value="$PROJECT_DIR$/src/test/java/project/tests/Parent/Test194/Test194FromParentMain93_selectclass.java" />
+        <option value="$PROJECT_DIR$/src/test/java/project/tests/Parent/Test194/Test194FromParentMain93_student.java" />
+        <option value="$PROJECT_DIR$/src/test/java/project/tests/Admin/Test92/Test92FromManageSchoolInfo17.java" />
+        <option value="$PROJECT_DIR$/src/test/java/project/tests/Admin/Test92/Test92FromManageSchoolInfo22.java" />
+        <option value="$PROJECT_DIR$/src/test/java/project/tests/Admin/Test92/Test92FromManageSchoolInfo12.java" />
+        <option value="$PROJECT_DIR$/src/test/java/project/tests/Admin/Test92/Test92BaseTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/project/tests/Admin/Test92/Test92FromManageSchoolInfo7.java" />
+        <option value="$PROJECT_DIR$/src/test/java/project/tests/Parent/Test30/Test30FromViewAssignments7.java" />
+        <option value="$PROJECT_DIR$/src/test/java/project/tests/Student/Test31/Test31FromViewAssignments7.java" />
+        <option value="$PROJECT_DIR$/src/test/java/project/tests/Parent/Test183/Test183FromViewAssignments85_onpage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/project/tests/Student/Test184/Test184FromViewAssignments85_onpage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/project/tests/Teacher/Test207/Test207FromViewAssignments7.java" />
+        <option value="$PROJECT_DIR$/src/test/java/project/tests/Admin/Test234/Test234FromManageTerms8.java" />
+        <option value="$PROJECT_DIR$/src/test/java/project/tests/Admin/Test54/Test54FromManageSchoolInfo7.java" />
+        <option value="$PROJECT_DIR$/src/test/java/project/tests/Student/Test138/Test138FromStudentMain8.java" />
+        <option value="$PROJECT_DIR$/src/test/java/project/tests/Admin/Test85/Test85FromEditSemester2.java" />
+        <option value="$PROJECT_DIR$/src/test/java/project/tests/Admin/Test44/Test44FromEditTerm2.java" />
+        <option value="$PROJECT_DIR$/src/test/java/project/tests/Admin/Test111/Test111FromEditTeacher2.java" />
+        <option value="$PROJECT_DIR$/src/test/java/project/tests/Parent/Test194/Test194FromParentMain8.java" />
+        <option value="$PROJECT_DIR$/src/test/java/project/tests/Teacher/Test37/Test37FromEditAssignment2.java" />
+        <option value="$PROJECT_DIR$/src/test/java/project/tests/Admin/Test41/Test41Fromindex36.java" />
+        <option value="$PROJECT_DIR$/src/test/java/project/tests/Admin/Test149/Test149FromEditUser2.java" />
+        <option value="$PROJECT_DIR$/src/test/java/project/tests/Admin/Test239/Test239FromEditClass2.java" />
+        <option value="$PROJECT_DIR$/src/test/java/project/tests/Admin/Test41/Test41FromEditAnnouncements2.java" />
+        <option value="$PROJECT_DIR$/src/test/java/project/utils/myUtils.java" />
+        <option value="$PROJECT_DIR$/src/test/java/project/tests/Parent/Test183/Test183FromViewAssignments85_selectclass.java" />
+        <option value="$PROJECT_DIR$/src/test/java/project/tests/Student/Test184/Test184FromViewAssignments85_selectclass.java" />
+        <option value="$PROJECT_DIR$/src/test/java/project/tests/Teacher/Test309/Test309FromManageAssignments257_selectclass.java" />
+        <option value="$PROJECT_DIR$/src/test/java/project/tests/Teacher/Test316/Test316FromManageGrades270.java" />
+        <option value="$PROJECT_DIR$/src/test/java/project/tests/Teacher/Test76/Test76FromEditGrade2.java" />
+        <option value="$PROJECT_DIR$/src/test/java/project/tests/Admin/Test161/Test161FromEditParent2.java" />
+        <option value="$PROJECT_DIR$/src/test/java/project/tests/Teacher/Test76/Test76FromEditGrade50_selectclass.java" />
+        <option value="$PROJECT_DIR$/src/test/java/project/tests/Admin/Test13/Test13FromAddAttendance3_student___.java" />
+        <option value="$PROJECT_DIR$/src/test/java/project/tests/Admin/Test13/Test13FromAddAttendance3_student.java" />
+        <option value="$PROJECT_DIR$/src/test/java/project/tests/Admin/Test115/Test115FromEditStudent2.java" />
+        <option value="$PROJECT_DIR$/src/test/java/project/tests/BaseTest.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="threads" value="5" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="sectest" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="sectest" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="sectest" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+          <item name="compiler" type="36feed69:MavenProjectsStructure$PluginNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="1079" />
+    <option name="width" value="1920" />
+    <option name="height" value="1" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="sectest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sectest" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sectest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sectest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sectest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sectest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sectest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sectest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sectest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sectest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sectest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sectest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sectest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sectest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547391105591" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../code_gen" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="project.tests.Admin.Test54" />
+      <recent name="project.tests.Admin.Test234" />
+      <recent name="project.tests.Teacher.Test207" />
+      <recent name="project.tests.Student.Test184" />
+      <recent name="project.tests.Parent.Test183" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.Test184FromStudentMain8">
+    <configuration name="Test115FromEditStudent2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sectest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="project.tests.Admin.Test115.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="project.tests.Admin.Test115" />
+      <option name="MAIN_CLASS_NAME" value="project.tests.Admin.Test115.Test115FromEditStudent2" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test13FromAddAttendance3_semester" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sectest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="project.tests.Admin.Test13.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="project.tests.Admin.Test13" />
+      <option name="MAIN_CLASS_NAME" value="project.tests.Admin.Test13.Test13FromAddAttendance3_semester" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test184FromStudentMain8" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sectest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="project.tests.Student.Test184.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="project.tests.Student.Test184" />
+      <option name="MAIN_CLASS_NAME" value="project.tests.Student.Test184.Test184FromStudentMain8" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test184FromViewAssignments85_onpage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sectest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="project.tests.Student.Test184.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="project.tests.Student.Test184" />
+      <option name="MAIN_CLASS_NAME" value="project.tests.Student.Test184.Test184FromViewAssignments85_onpage" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test184FromViewAssignments85_selectclass" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sectest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="project.tests.Student.Test184.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="project.tests.Student.Test184" />
+      <option name="MAIN_CLASS_NAME" value="project.tests.Student.Test184.Test184FromViewAssignments85_selectclass" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test184Fromindex36" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sectest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="project.tests.Student.Test184.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="project.tests.Student.Test184" />
+      <option name="MAIN_CLASS_NAME" value="project.tests.Student.Test184.Test184Fromindex36" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_regexPattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Twisted Trial">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.Test115FromEditStudent2" />
+      <item itemvalue="JUnit.Test184FromViewAssignments85_selectclass" />
+      <item itemvalue="JUnit.Test184FromViewAssignments85_onpage" />
+      <item itemvalue="JUnit.Test184Fromindex36" />
+      <item itemvalue="JUnit.Test184FromStudentMain8" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.Test184FromStudentMain8" />
+        <item itemvalue="JUnit.Test184Fromindex36" />
+        <item itemvalue="JUnit.Test184FromViewAssignments85_onpage" />
+        <item itemvalue="JUnit.Test184FromViewAssignments85_selectclass" />
+        <item itemvalue="JUnit.Test115FromEditStudent2" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d9d85044-c076-48e5-a4bb-37e8d260f3f3" name="Default Changelist" comment="" />
+      <created>1545992753455</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1545992753455</updated>
+      <workItem from="1545992754870" duration="1880000" />
+      <workItem from="1546000207591" duration="1083000" />
+      <workItem from="1546004047064" duration="664000" />
+      <workItem from="1546008156942" duration="1918000" />
+      <workItem from="1546010115405" duration="6237000" />
+      <workItem from="1546072996209" duration="2292000" />
+      <workItem from="1546077154290" duration="5746000" />
+      <workItem from="1546092978072" duration="105000" />
+      <workItem from="1546101928569" duration="4702000" />
+      <workItem from="1546765340209" duration="21465000" />
+      <workItem from="1546851634685" duration="13580000" />
+      <workItem from="1546943777232" duration="7396000" />
+      <workItem from="1547056472825" duration="387000" />
+      <workItem from="1547124030823" duration="10151000" />
+      <workItem from="1547139944287" duration="33000" />
+      <workItem from="1547334309544" duration="14318000" />
+    </task>
+    <task id="LOCAL-00001" summary="finito Teacher">
+      <created>1546016285619</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1546016285619</updated>
+    </task>
+    <task id="LOCAL-00002" summary="autocommit">
+      <created>1546075437487</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1546075437488</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Finito tutto!!!">
+      <created>1546083659989</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1546083659990</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Fixato alcuni test che avevo saltato">
+      <created>1546089473644</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1546089473644</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Fixato alcuni test che avevo saltato 2">
+      <created>1546089509912</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1546089509912</updated>
+    </task>
+    <task id="LOCAL-00006" summary="aggiunti alcuni test mancanti e sviluppato il primo prototipo per li XSS persistenti">
+      <created>1546800436754</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1546800436754</updated>
+    </task>
+    <task id="LOCAL-00007" summary="small changes">
+      <created>1546804132087</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1546804132087</updated>
+    </task>
+    <task id="LOCAL-00008" summary="fix the tests with the delete function">
+      <created>1547139163051</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1547139163051</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="Test194FromParentMain93_student - 2019.01.13 at 15h 15m 07s.xml">
+      <configuration name="Test194FromParentMain93_student" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Test194FromParentMain8 - 2019.01.13 at 15h 15m 48s.xml">
+      <configuration name="Test194FromParentMain8" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Test183FromViewAssignments85_selectclass - 2019.01.13 at 15h 16m 36s.xml">
+      <configuration name="Test183FromViewAssignments85_selectclass" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Test183FromViewAssignments85_onpage - 2019.01.13 at 15h 16m 58s.xml">
+      <configuration name="Test183FromViewAssignments85_onpage" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Test76FromEditGrade50_selectclass - 2019.01.13 at 15h 18m 05s.xml">
+      <configuration name="Test76FromEditGrade50_selectclass" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Test76FromEditGrade50_assignment - 2019.01.13 at 15h 18m 27s.xml">
+      <configuration name="Test76FromEditGrade50_assignment" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Test76FromEditGrade2 - 2019.01.13 at 15h 18m 55s.xml">
+      <configuration name="Test76FromEditGrade2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Test115FromEditStudent2 - 2019.01.13 at 15h 35m 24s.xml">
+      <configuration name="Test115FromEditStudent2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Test115FromEditStudent2 - 2019.01.13 at 15h 35m 54s.xml">
+      <configuration name="Test115FromEditStudent2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Test115FromEditStudent2 - 2019.01.13 at 15h 36m 38s.xml">
+      <configuration name="Test115FromEditStudent2" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="91957000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <flatten-packages value="true" />
+      <is-autoscroll-to-source value="true" />
+      <is-preview-enabled value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="32" width="1920" height="1048" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24705882" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32932165" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49946523" visible="true" weight="0.3501094" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.38402626" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32932165" />
+      <window_info anchor="bottom" id="Thumbnails" order="7" weight="0.329718" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.329718" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5005348" side_tool="true" weight="0.329718" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.329718" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="bottom" id="Version Control" order="13" weight="0.33017877" />
+      <window_info anchor="bottom" id="Maven test results" order="14" sideWeight="0.49946523" weight="0.33260393" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" visible="true" weight="0.32994652" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="SciView" order="6" />
+      <window_info anchor="right" id="Database" order="7" weight="0.32994652" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info anchor="right" id="PlantUML" order="10" />
+      <window_info anchor="right" x="0" y="0" width="430" height="848" id="Documentation" order="11" side_tool="true" weight="0.32994652" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26898396" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946523" visible="true" weight="0.329718" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.329718" />
+      <window_info anchor="bottom" id="Thumbnails" order="7" weight="0.329718" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.329718" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5005348" side_tool="true" weight="0.329718" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.329718" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="bottom" id="Version Control" order="13" weight="0.329718" />
+      <window_info anchor="bottom" id="Maven test results" order="14" weight="0.329718" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.32994652" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="SciView" order="6" />
+      <window_info anchor="right" id="Database" order="7" weight="0.32994652" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info anchor="right" id="PlantUML" order="10" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="finito Teacher" />
+    <MESSAGE value="autocommit" />
+    <MESSAGE value="Finito tutto!!!" />
+    <MESSAGE value="Fixato alcuni test che avevo saltato" />
+    <MESSAGE value="Fixato alcuni test che avevo saltato 2" />
+    <MESSAGE value="aggiunti alcuni test mancanti e sviluppato il primo prototipo per li XSS persistenti" />
+    <MESSAGE value="small changes" />
+    <MESSAGE value="fix the tests with the delete function" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix the tests with the delete function" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/project/tests/Teacher/Test180/Test180Fromindex36.java</url>
+          <line>31</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/project/tests/Teacher/Test309/Test309Fromindex36.java</url>
+          <line>32</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/project/tests/Teacher/Test309/Test309FromManageAssignments257_onpage.java</url>
+          <line>32</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/project/tests/Teacher/Test316/Test316FromTeacherMain8.java</url>
+          <line>31</line>
+          <properties />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/project/tests/Teacher/Test316/Test316FromManageGrades270.java</url>
+          <line>31</line>
+          <properties />
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/project/tests/Admin/Test161/Test161FromAdminMain7.java</url>
+          <line>30</line>
+          <properties />
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/project/tests/Admin/Test186/Test186Fromindex36.java</url>
+          <line>30</line>
+          <properties />
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/project/tests/Admin/Test238/Test238Fromindex36.java</url>
+          <line>32</line>
+          <properties />
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/project/tests/Teacher/Test11/Test11Fromindex36.java</url>
+          <line>33</line>
+          <properties />
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/project/tests/Teacher/Test76/Test76FromEditGrade50_selectclass.java</url>
+          <line>33</line>
+          <properties />
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/project/tests/Admin/Test92/Test92FromManageSchoolInfo7.java</url>
+          <line>97</line>
+          <properties />
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/project/tests/Admin/Test92/Test92FromManageSchoolInfo7.java</url>
+          <line>81</line>
+          <properties />
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/project/tests/Admin/Test92/Test92FromManageSchoolInfo7.java</url>
+          <line>77</line>
+          <properties />
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/project/tests/Parent/Test30/Test30FromViewAssignments7.java</url>
+          <line>78</line>
+          <properties />
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/project/tests/Parent/Test30/Test30FromViewAssignments7.java</url>
+          <line>63</line>
+          <properties />
+          <option name="timeStamp" value="56" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/project/tests/Admin/Test234/Test234FromManageTerms8.java</url>
+          <line>43</line>
+          <properties />
+          <option name="timeStamp" value="63" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/project/tests/Admin/Test54/Test54FromManageSchoolInfo7.java</url>
+          <line>35</line>
+          <properties />
+          <option name="timeStamp" value="69" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/project/tests/Admin/Test41/Test41Fromindex36.java</url>
+          <line>31</line>
+          <properties />
+          <option name="timeStamp" value="70" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/project/tests/Admin/Test149/Test149FromEditUser2.java</url>
+          <line>31</line>
+          <properties />
+          <option name="timeStamp" value="71" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/project/tests/Teacher/Test76/Test76FromEditGrade2.java</url>
+          <line>31</line>
+          <properties />
+          <option name="timeStamp" value="74" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/project/tests/Student/Test184/Test184FromViewAssignments85_selectclass.java</url>
+          <line>32</line>
+          <properties />
+          <option name="timeStamp" value="76" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/project/tests/Admin/Test161/Test161FromEditParent2.java</url>
+          <line>33</line>
+          <properties />
+          <option name="timeStamp" value="78" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/project/tests/Admin/Test115/Test115FromEditStudent2.java</url>
+          <line>31</line>
+          <properties />
+          <option name="timeStamp" value="79" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/project/tests/Parent/Test194/Test194FromParentMain8.java</url>
+          <line>32</line>
+          <properties />
+          <option name="timeStamp" value="82" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/test/java/project/tests/Student/Test184/Test184Fromindex36.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar!/org/openqa/selenium/By.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/project/tests/Admin/Test92/Test92FromManageSchoolInfo22.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/project/tests/Admin/Test92/Test92FromManageSchoolInfo17.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/project/tests/Admin/Test92/Test92FromManageSchoolInfo12.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/project/tests/Admin/Test92/Test92BaseTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/project/tests/Admin/Test92/Test92FromAdminMain7.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="28" column="40" lean-forward="true" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/project/tests/Parent/Test87/Test87Fromindex36.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/project/tests/Parent/ParentBaseTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/project/tests/Student/Test31/Test31FromViewAssignments7.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="590">
+          <caret line="97" selection-start-line="97" selection-end-line="97" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/project/tests/Student/StudentBaseTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/project/tests/Parent/Test30/Test30FromViewAssignments7.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1512">
+          <caret line="84" column="9" selection-start-line="84" selection-start-column="9" selection-end-line="84" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/project/tests/Teacher/Test207/Test207FromViewAssignments7.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1638">
+          <caret line="109" column="8" selection-start-line="109" selection-start-column="8" selection-end-line="109" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/project/tests/Teacher/TeacherBaseTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/project/tests/Admin/Test234/Test234FromManageTerms8.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1062">
+          <caret line="59" column="46" selection-start-line="59" selection-start-column="46" selection-end-line="59" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/project/tests/Admin/Test54/Test54FromManageSchoolInfo7.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="626">
+          <caret line="94" column="8" selection-start-line="94" selection-start-column="8" selection-end-line="94" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.11/junit-4.11-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/project/tests/Admin/Test92/Test92FromManageSchoolInfo7.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-56">
+          <caret line="69" column="32" lean-forward="true" selection-start-line="69" selection-start-column="32" selection-end-line="69" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/project/tests/Student/Test138/Test138FromStudentMain8.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="38" column="32" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/project/tests/Admin/Test85/Test85FromAdminMain7.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="31" column="72" selection-start-line="31" selection-start-column="72" selection-end-line="31" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/project/tests/Admin/Test85/Test85FromEditSemester2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="33" column="35" lean-forward="true" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/project/tests/Admin/Test44/Test44FromEditTerm2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="29" column="33" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/project/tests/Admin/Test44/Test44Fromindex36.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/project/tests/Admin/Test111/Test111FromEditTeacher2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="29" column="35" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/project/tests/Teacher/Test37/Test37FromEditAssignment2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="30" column="35" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/project/tests/Teacher/Test37/Test37FromEditAssignment27.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/project/tests/Admin/Test115/Test115FromAdminMain7.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/project/tests/Admin/Test41/Test41Fromindex36.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/project/tests/Admin/Test239/Test239FromEditClass2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="29" column="35" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/project/tests/Admin/Test149/Test149FromEditUser2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="31" column="36" selection-start-line="31" selection-start-column="36" selection-end-line="31" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/project/tests/Admin/Test41/Test41FromAdminMain7.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="31" column="65" selection-start-line="31" selection-start-column="65" selection-end-line="31" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/project/tests/Admin/Test41/Test41FromEditAnnouncements2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/project/tests/Student/Test184/Test184FromViewAssignments85_onpage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="32" column="29" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/project/tests/Teacher/Test316/Test316FromManageGrades270.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="18" column="47" lean-forward="true" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/project/tests/Teacher/Test309/Test309FromManageAssignments257_selectclass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="31" column="69" selection-start-line="31" selection-start-column="69" selection-end-line="31" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/project/utils/myUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="35" column="28" lean-forward="true" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/project/tests/Admin/Test161/Test161FromEditParent2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/project/tests/Admin/Test13/Test13FromAddAttendance3_semester.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/project/tests/Admin/Test13/Test13FromAddAttendance3_student.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/project/tests/Parent/Test194/Test194FromParentMain93_selectclass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="30" column="7" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/project/tests/Parent/Test194/Test194FromParentMain93_student.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/project/tests/Parent/Test183/Test183FromViewAssignments85_selectclass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="31" column="49" selection-start-line="31" selection-start-column="49" selection-end-line="31" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/project/tests/Parent/Test183/Test183FromViewAssignments85_onpage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/project/tests/Student/Test184/Test184FromViewAssignments85_selectclass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/project/tests/Parent/Test194/Test194FromParentMain8.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/project/tests/Teacher/Test76/Test76FromEditGrade50_selectclass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="33" column="50" selection-start-line="33" selection-start-column="50" selection-end-line="33" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/project/tests/Teacher/Test76/Test76FromEditGrade50_assignment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="25" column="28" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/project/tests/Teacher/Test76/Test76FromEditGrade2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="474">
+          <caret line="31" column="104" selection-start-line="31" selection-start-column="104" selection-end-line="31" selection-end-column="104" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/project/tests/Admin/Test115/Test115FromEditStudent2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/project/tests/BaseTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="21" column="41" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="63" column="23" selection-start-line="63" selection-start-column="23" selection-end-line="63" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Python 3.7 interpreter library</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>11</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>sectest</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>11</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: com.google.code.findbugs:jsr305:1.3.9</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

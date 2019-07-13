@@ -1,0 +1,30 @@
+{
+    "run": {
+        "default": "",
+        "items": [
+            {
+                "name": "sectest",
+                "projectName": "sectest",
+                "workingDirectory": "/home/alessio/my_repos/sectest_proj/sectest",
+                "args": [],
+                "vmargs": [],
+                "env": {},
+                "preLaunchTask": ""
+            }
+        ]
+    },
+    "debug": {
+        "default": "",
+        "items": [
+            {
+                "name": "sectest",
+                "projectName": "sectest",
+                "workingDirectory": "/home/alessio/my_repos/sectest_proj/sectest",
+                "args": [],
+                "vmargs": [],
+                "env": {},
+                "preLaunchTask": ""
+            }
+        ]
+    }
+}
